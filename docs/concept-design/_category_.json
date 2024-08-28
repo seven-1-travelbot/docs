@@ -1,0 +1,8 @@
+{
+  "label": "Concept design",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Concept design docs explain core ideas and concept elements of the system without technical assumptions."
+  }
+}
