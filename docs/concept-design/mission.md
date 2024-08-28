@@ -32,3 +32,5 @@ Compiled mission can be seen as a custom AI workflow with a knowledge about a co
 This can be used, but not restricted to:
 
 - Marketing (creating social media posts)
+
+- Answering emails
