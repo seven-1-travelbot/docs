@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  create_artifact:
+  create_build_artifact:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
