@@ -11,11 +11,11 @@ First phase of a standard RAG pipeline
 
 There are **3 sources** for data retrieval:
 
-| Source       | Type of data        | Uses persistent storage | Needs preprocessing |
-| ------------ | ------------------- | :---------------------: | :-----------------: |
-| Vector DB    | chunks (text/media) |           ✅            |         ❌          |
-| Live Search  | realtime html       |           ❌            |         ✅          |
-| Integrations | API output(JSON)    |           ❌            |     ✅ **/** ❌     |
+| Source        | Type of data        | Uses persistent storage | Needs preprocessing |
+| ------------- | ------------------- | :---------------------: | :-----------------: |
+| Vector DB     | chunks (text/media) |           ✅            |         ❌          |
+| Live Fetching | realtime html       |           ❌            |         ✅          |
+| Integrations  | API output(JSON)    |           ❌            |     ✅ **/** ❌     |
 
 ### Vector DB
 
@@ -23,7 +23,7 @@ In vector database we save chunks of a static information (information that does
 
 As chunk can include media data as metadata or be itself a media chunk (depends on saving modificators and retrieval settings), these media data is extracted for future hydrating and only text part is used for augmentation.
 
-### Live Search
+### Live Fetching
 
 When data changes frequently, it doesn't make sense to save it in a vector db(it will be outdated soon after saving). So we are making a runtime request to get needed data in realtime and after a little bit of preprocessing (html -> chunk) it can be included.
 

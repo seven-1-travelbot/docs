@@ -7,16 +7,16 @@ description: Visualizes map backbone
 
 Probably it is the most used and useful viewport in the editor.
 
-Visualizes [map backbone](/docs/concept-design/map.md) and lets you add new locations or edit existing, as well as setup bot's behaviour.
+Visualizes [map backbone](../concept-design/map.md) and lets you add new locations or edit existing, as well as setup bot's behaviour.
 
 ## Features
 
 - Map visualization
 
-- Add new locations via [webscraping](/docs/concept-design/webscraping.md)
+- Add new locations via [webscraping](../concept-design/webscraping.md)
 
-- Customize bot's behaviour via [behaviour lines](/docs/concept-design/map.md#behaviour-line)
+- Customize bot's behaviour via [behaviour lines](../concept-design/map.md#behaviour-line)
 
-- Setup [data sources](/docs/concept-design/RAG/data-retrieval.md#data-sources) for locations
+- Setup [data sources](../concept-design/RAG/data-retrieval.md#data-sources) for locations
 
 - Specify toolset

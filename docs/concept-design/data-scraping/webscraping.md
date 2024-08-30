@@ -23,7 +23,7 @@ Scarping/chunking the html document to save chunks into vector database.
 
 ## Cohesion
 
-![Wireframe of a newspaper](./img/wireframe.jpeg)
+![Wireframe of a newspaper](/img/wireframe.jpeg)
 
 When we see some structured document (article in a paper, html, pdf), we can say based on a **markup only** (with random text and hidden media), that some parts of it probably have a **higher connection** between each other, than with other parts. Like _heading_ of an article do have a connection with all article's text, but it's **less** than a connection between _subheader_ and its corresponding _part_ of the _same_ article. Same goes for _media_, an _image_ placed near some part of a text has a **higher connection** to it, than to any other _part_ of a document (even to _subheader_ of this text).
 
