@@ -23,9 +23,8 @@ jobs:
         run: bun run build
 
       - name: Upload website's build as an artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: docs
           path: build
 
   deploy:
@@ -47,5 +46,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: docs
