@@ -4,7 +4,7 @@ Frontend is detachable part of the platform, whose main goals are:
 
 - Talking to a Connect travelbot's gateway (as a client)
 
-- Visualize an answer, including [hydration](/docs/concept-design/hydration.md)
+- Visualize an answer, including [hydration](../concept-design/hydration.md)
 
 - Setting up visual travelbot's appearance
 

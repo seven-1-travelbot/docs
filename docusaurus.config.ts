@@ -18,12 +18,12 @@ const config: Config = {
   url: "https://your-docusaurus-site.example.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/docs",
+  baseUrl: "/travelbot-docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "seven-1-travelbot", // Usually your GitHub org/user name.
-  projectName: "docs", // Usually your repo name.
+  projectName: "travelbot-docs", // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: "throw",
@@ -43,9 +43,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
+          routeBasePath: "/",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/seven-1-travelbot/docs/tree/main",
+          editUrl:
+            "https://github.com/seven-1-travelbot/travevelbot-docs/tree/main",
         },
 
         theme: {
@@ -72,7 +74,7 @@ const config: Config = {
           label: "Docs",
         },
         {
-          href: "https://github.com/seven-1-travelbot/docs",
+          href: "https://github.com/seven-1-travelbot/travelbot-docs",
           label: "GitHub",
           position: "right",
         },
@@ -86,11 +88,11 @@ const config: Config = {
           items: [
             {
               label: "Concept Design",
-              to: "/docs/concept-design/overview",
+              to: "/concept-design/overview",
             },
             {
               label: "Technical Design",
-              to: "/docs/implementation/overview",
+              to: "/implementation/overview",
             },
           ],
         },

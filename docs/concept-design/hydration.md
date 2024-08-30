@@ -13,5 +13,5 @@ Media content for hydration phase is received during [**retrieval**](./RAG/data-
 Text is combined with media and [mighty buttons](./mighty-buttons.md) to form a _widget_.
 
 :::info
-Hydration happens on [frontend](/docs/implementation/frontend.md) and is frontend dependent.
+Hydration happens on [frontend](../implementation/frontend.md) and is frontend dependent.
 :::
