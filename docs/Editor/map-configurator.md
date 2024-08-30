@@ -13,7 +13,7 @@ Visualizes [map backbone](../concept-design/map.md) and lets you add new locatio
 
 - Map visualization
 
-- Add new locations via [webscraping](../concept-design/webscraping.md)
+- Add new locations via [webscraping](../concept-design/data-scraping//webscraping.md)
 
 - Customize bot's behaviour via [behaviour lines](../concept-design/map.md#behaviour-line)
 

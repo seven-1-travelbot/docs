@@ -1,0 +1,48 @@
+name: Build Docs to artifact
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create_build_artifact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build the bundle
+        run: bun run build
+
+      - name: Upload website's build as an artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs
+          path: build
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: create_build_artifact
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
+
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
