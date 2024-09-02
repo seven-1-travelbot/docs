@@ -22,15 +22,15 @@ travelbot/
 │   ├── Scrape Configs/
 │   │   ├── 7fc4c8415f6848e76ad6bc6f9b779bc8.protobin
 │   │   └── e30aaee6672c0f2f66e1dfa58dcd7cb3.protobin
-│   └── UI Configs/
-│       └── 5e32ad9567a72b3f0fc751573794cc7b/
-│           ├── logo.png
-│           └── 5e32ad9567a72b3f0fc751573794cc7b.protobin
+│   ├── UI Configs/
+│   │   └── 5e32ad9567a72b3f0fc751573794cc7b.protobin
+│   └── Assets/
+│       └── logo.png
 └── dd76f82f3df49afbb0ec9ad827a88e5a (project_2)/
     └── ...
 ```
 
-<!-- Use this website https://tree.nathanfriend.io/?s=(%27options!(%27fancy!true~fullPath!false~trailingSlash!true~rootDot!false)~J(%27J%27travelbotAbed74a7bd37c9fd737af2d3e1446c887E*K.HtN*MapL91c776813526d62a377c88a78e113c7fOMissionsL2bf8e4a251c1f7e9bc86c16d0e312999Qde0da9cd941d7f68387413196b3dce9aODialog%20StartersL02b3cecb4bc2598a6e05a80e90279a86Q3efea4df6407457d621c9beab9290416Q891a440de7bd48321557bff81b7e20f9OScrapeFG7fc4c8415f6848e76ad6bc6f9b779bc8Qe30aaee6672c0f2f66e1dfa58dcd7cb3OUIFBL*logo.pngA*B-dd76f82f3df49afbb0ec9ad827a88e5aE%20...%27)~version!%271%27)*%20%20-.HtoNA%5Cn*BG5e32ad9567a72b3f0fc751573794cc7bE%20%7BK_2%7DAF%20ConfigsL**HproJsource!KHjectLAGNbinAO-*Q-G%01QONLKJHGFEBA-* to generate filesystem. -->
+<!-- Use this website https://tree.nathanfriend.io/?s=(%27options!(%27fancy!true~fullPath!false~trailingSlash!true~rootDot!false)~J(%27J%27travelbotFbed74a7bd37c9fd737af2d3e1446c887E*L.HtNMap*B91c776813526d62a377c88a78e113c7f-MissionK2bf8e4a251c1f7e9bc86c16d0e312999Ode0da9cd941d7f68387413196b3dce9a-Dialog%20StarterK02b3cecb4bc2598a6e05a80e90279a86O3efea4df6407457d621c9beab9290416O891a440de7bd48321557bff81b7e20f9-ScrapeG7fc4c8415f6848e76ad6bc6f9b779bc8Oe30aaee6672c0f2f66e1dfa58dcd7cb3-UIG5e32ad9567a72b3f0fc751573794cc7b-AssetKlogo.pngFdd76f82f3df49afbb0ec9ad827a88e5aEF%20...%27)~version!%271%27)*FB-.HtoNB%20%20E%20%7BL_2%7DF%5CnBG%20ConfigKHproJsource!Ks*BLHjectNbin*O-B%01ONLKJHGFEB-* to generate filesystem. -->
 
 So here's a couple of moments to notice:
 
@@ -44,4 +44,4 @@ So here's a couple of moments to notice:
 
 - config's file names are their `config_id`s
 
-- UI Configs' subfolders contain their **media** elements in them
+- `Assets` is a special folder with **media** files to use by UI Configs
